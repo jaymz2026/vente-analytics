@@ -22,4 +22,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B clean verify
       env:
-        SPRING_AI_MISTRAL_API_KEY: dummy-key
+        SPRING_AI_MISTRAL_API_KEY: ${{ secrets.MISTRAL_AI_API_KEY }}
